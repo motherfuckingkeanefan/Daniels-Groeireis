@@ -1,0 +1,90 @@
+/* Algemene reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body en algemene stijl */
+body {
+    background-color: #0b0b0b;
+    font-family: 'Arial Black', sans-serif;
+    color: wit;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #ff0000;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #cccccc;
+    margin-top: 10px;
+}
+
+/* Gallerij sectie */
+.gallery {
+    background-color: #1b1b1b;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.gallery h2 {
+    font-size: 2rem;
+    color: #ffcc00;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.photos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.photo-item {
+    background-color: #1a1a1a;
+    padding: 10px;
+    border: 4px solid #ffcc00;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 220px;
+    height: 300px;
+}
+
+.photo-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 4px solid #ffcc00;
+}
+
+.photo-item p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #ffcc00;
+    text-transform: uppercase;
+}
+
+.photo-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.6);
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 0.8rem;
+    color: #666666;
+}

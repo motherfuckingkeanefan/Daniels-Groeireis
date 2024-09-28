@@ -8,7 +8,7 @@
 /* Body en algemene stijl */
 body {
     background-color: #e8f6f3; /* Pastel blauwgroen als de lucht */
-    font-family: 'Cursive', sans-serif;
+    font-family: 'Poppins', 'Cursive', sans-serif; /* Consistente font */
     color: #333;
     padding: 20px;
     text-align: center;
@@ -41,7 +41,7 @@ header p {
     font-style: italic;
 }
 
-/* Gallery Section */
+/* Gallerij sectie */
 .gallery {
     background-color: rgba(255, 240, 245, 0.9); /* Zachtroze transparante achtergrond */
     padding: 30px;
@@ -92,7 +92,6 @@ header p {
     text-transform: uppercase;
 }
 
-/* Footer */
 footer {
     margin-top: 40px;
     font-size: 1rem;
@@ -104,12 +103,10 @@ footer {
 /* Responsive design for mobile */
 /* ========================= */
 @media (max-width: 768px) {
-    /* Body */
     body {
         padding: 10px;
     }
 
-    /* Header */
     header h1 {
         font-size: 2rem;
         letter-spacing: 1.5px;
@@ -119,7 +116,6 @@ footer {
         font-size: 1.2rem;
     }
 
-    /* Gallery section */
     .gallery {
         padding: 20px;
     }
@@ -129,32 +125,30 @@ footer {
     }
 
     .photos {
-        flex-direction: column; /* Stack photos vertically */
+        flex-direction: column; /* Stapel foto's verticaal */
         gap: 20px;
     }
 
     .photo-item {
         width: 100%;
-        max-width: 300px; /* Limit width for mobile screens */
-        height: auto; /* Let height adjust automatically */
+        max-width: 300px; /* Beperk de breedte voor mobiele schermen */
+        height: auto; /* Laat de hoogte automatisch aanpassen */
     }
 
     .photo-item img {
-        height: auto; /* Auto height for responsive images */
+        height: auto; /* Auto hoogte voor responsieve afbeeldingen */
     }
 
     .photo-item p {
         font-size: 1.2rem;
     }
 
-    /* Footer */
     footer {
         font-size: 0.9rem;
     }
 }
 
 @media (max-width: 480px) {
-    /* Even smaller font sizes for very small screens */
     header h1 {
         font-size: 1.8rem;
     }

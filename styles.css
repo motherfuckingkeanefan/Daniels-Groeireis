@@ -230,3 +230,36 @@ footer {
     padding: 10px 0;
     height: 150px;
 }
+
+/* Style the audio player container */
+.audio-container {
+    margin-top: 10px; /* Space above the audio player */
+    background-color: rgba(255, 240, 245, 0.8); /* Light pink background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding around the audio player */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Style the native audio element */
+audio {
+    width: 100%; /* Full width */
+    height: 30px; /* Fixed height */
+    border: none; /* Remove default border */
+    outline: none; /* Remove outline on focus */
+}
+
+/* Style the play button */
+audio::-webkit-media-controls-panel {
+    background-color: rgba(255, 182, 193, 0.7); /* Light pink background for controls */
+    border-radius: 5px; /* Rounded corners */
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color: #ffb6c1; /* Custom play button color */
+    border-radius: 5px; /* Rounded corners */
+    color: white; /* White text color */
+}
+
+audio::-webkit-media-controls-volume-slider {
+    background-color: rgba(255, 240, 245, 0.9); /* Background for the volume slider */
+}
